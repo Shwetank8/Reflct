@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import {ClerkProvider} from '@clerk/nextjs'
 import { Toaster } from "sonner";
+import Link from "next/link";
+import Image from "next/image";
+import { Github, Linkedin } from "lucide-react";
 
 const inter = Inter({subsets:["latin"]})
 
@@ -29,9 +32,17 @@ export default function RootLayout({
 
           <main className="min-h-screen">{children}</main>
           <Toaster richColors />
-          <footer className="bg-orange-300 py-12 bg-opacity-10">
+          <footer className="bg-orange-300 py-4 bg-opacity-10">
             <div className="mx-auto px-4 text-center text-gray-900">
               <p>Shwetank Sinha</p>
+              <div className="flex justify-center items-center space-x-4">
+                <Link href="https://github.com/Shwetank8" target="_blank" rel="noopener">
+                  <Github className="h-6 w-6 hover:text-gray-600 transition-colors" />
+                </Link>
+                <Link href="https://www.linkedin.com/in/shwetank-sinha-200ab2282/" target="_blank" rel="noopener">
+                  <Linkedin className="h-6 w-6 hover:text-gray-600 transition-colors" />
+                </Link>
+              </div>
             </div>
           </footer>
         </body>
