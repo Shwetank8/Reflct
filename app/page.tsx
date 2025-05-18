@@ -41,7 +41,7 @@ export default async function Home() {
 
   return (
     <div className="relative container mx-auto px-4 pt-16 pb-16">
-      <div className="max-w-5xl ax-auto text-center space-y-8 ml-28">
+      <div className="max-w-5xl ax-auto text-center space-y-8 ml-28 p-2">
         <h1 className="text-5xl md:text-7xl lg:text-8xl mb-6 gradient-title">
           Your Space to Reflect
           <br/>
